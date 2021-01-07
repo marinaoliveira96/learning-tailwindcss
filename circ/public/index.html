@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <nav
+            role="navigation"
+            class="flex justify-between items-center h-16 bg-gradient-to-r from-purple-700 to-purple-600 text-white relative"
+        >
+            <a href="index.html" class="pl-6">CIRC</a>
+            <div class="px-4 cursor-pointer md:hidden" id="bars">
+                <svg
+                    class="w-8 h-8"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"
+                    ></path>
+                </svg>
+            </div>
+            <div class="hidden md:block" id="menu">
+                <a href="index.html" class="p-4">Home</a>
+                <a href="about.html" class="p-4">About</a>
+                <a href="contact.html" class="p-4">Contact</a>
+            </div>
+        </nav>
+        <!--  hero section -->
+        <!-- https://raw.githubusercontent.com/briancodex/tailwindcss-website-v1/main/public/images/img.jpg -->
+        <div
+            class="bg-no-repeat h-screen bg-center bg-cover center"
+            style="background-image: url('./images/img.jpg')"
+            ba
+        >
+            <div class="text-center font-bold">
+                <h1
+                    class="lg:text-9xl sm:text-6xl text-4xl mb-10 text-purple-600 hover:text-white duration-300"
+                >
+                    Choose your colors
+                </h1>
+                <a
+                    href=""
+                    class="text-white text-xl center transform hover:scale-110 duration-300"
+                    >Explore
+                    <svg
+                        class="w-6 h-6 ml-2"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M14 5l7 7m0 0l-7 7m7-7H3"
+                        ></path></svg
+                ></a>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
